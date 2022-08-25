@@ -27,4 +27,4 @@ require("bare").setup({
 	enabled = false,
 })
 ```
-The `test.lua` should print false, while anything that references that configuration outside of the setup function in the `init.lua` should print true, as in the default configuration.
+The `require("bare.test")` inside the setup function should print false, while anything that references that configuration outside of the setup function in the `init.lua` should print true, as in the default configuration.

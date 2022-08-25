@@ -4,7 +4,7 @@ local M = {}
 
 M.setup = function(opts)
 	config.update(opts)
-	require("bare.test")
+	require("bare.test") -- test.lua can access new config
 end
 
 return M

@@ -1,2 +1,9 @@
 local config = require("bare.config")
-print(config.enabled)
+
+local M = {}
+
+function M.test_func()
+	print(config.enabled)
+end
+
+return M
